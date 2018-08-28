@@ -42,8 +42,8 @@
             "args": [
                 "runserver",
                 "0.0.0.0:80",
-                "--noreload",
-                "--nothreading"
+                // "--noreload",
+                // "--nothreading"
             ],
             "debugOptions": [
                 "RedirectOutput",
