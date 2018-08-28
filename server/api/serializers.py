@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from servermanage.models import Host
+from server.models import Host
 
 
 class HostSerializer(serializers.ModelSerializer):

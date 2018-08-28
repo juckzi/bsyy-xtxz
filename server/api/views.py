@@ -1,4 +1,4 @@
-from servermanage.models import Host
+from server.models import Host
 from .serializers import HostSerializer
 from rest_framework import viewsets, filters
 
