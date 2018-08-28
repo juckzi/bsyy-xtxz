@@ -25,7 +25,7 @@ SECRET_KEY = '+k2!4=c=s!ojxyaxn&#&1st7l!plzy333qq&yp%8_i2sc)53pl'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['172.31.88.88','127.0.0.1']
 
 
 # Application definition
@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'django_filters',
     'xxxt',
-    'server',
 ]
 
 MIDDLEWARE = [
@@ -125,3 +125,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
+
+REST_FRAMEWORK = {
+    'SEARCH_PARAM' : 'chazhao',
+    'ORDERING_PARAM' : 'order_by',
+}
