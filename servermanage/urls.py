@@ -3,6 +3,6 @@ from django.urls import path,include
 from .views import index
 
 urlpatterns = [
-    path('api/', include('xxxt.api.urls'),name='api'),
+    path('api/', include('servermanage.api.urls'),name='servermanage-api'),
     path('', index,name='index'),
 ]
