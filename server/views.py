@@ -5,4 +5,4 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse('欢迎来到服务器管理页面！')
+    return render(request,'server/index.html')

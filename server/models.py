@@ -59,6 +59,9 @@ class Host(models.Model):
     hard_disk_counts = models.PositiveSmallIntegerField(blank=True,verbose_name='磁盘数量')
     raid_type = models.CharField(max_length=50,choices=RAID_TYPE_CHOICES,blank=True,verbose_name='RAID类型')
 
+    #管理相关
+    add_time = models.DateTimeField(auto_now_add=True,verbose_name='添加时间')
+    update_time = models.DateTimeField(auto_now=True,verbose_name='修改时间')
 
     def __str__(self):
         return self.host_name
